@@ -1,24 +1,13 @@
-# README
+# Shipment - Create Graph using Highcharts and gstatic
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app is my try at creating graphs inside rails applications.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Dependencies:
+  gem 'haml'
+  gem "erb2haml"
+  gem 'gon'
+  
+ Disclaimer: Does not work without unblocked internet connection (needs to connect to gstatic and highcharts)
+ 
+ Gem 'gon' is used to have variables in javascripts from the controller
+ and rest was taken from gstatic/charts

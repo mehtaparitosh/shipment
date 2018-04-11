@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Shipment
+    = include_gon
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    / Load the AJAX API
+    %script{:src => "https://www.gstatic.com/charts/loader.js", :type => "text/javascript"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    %script{:src => "https://code.highcharts.com/highcharts.js"}
+    %script{:src => "https://code.highcharts.com/modules/series-label.js"}
+    %script{:src => "https://code.highcharts.com/modules/exporting.js"}
+    %script{:src => "https://code.highcharts.com/modules/export-data.js"}
+
+  %body
+    = yield

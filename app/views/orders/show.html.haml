@@ -1,0 +1,15 @@
+%p#notice= notice
+%p
+  %strong Number:
+  = @order.number
+%p
+  %strong Date:
+  = @order.date
+%p
+  %strong Price:
+  = @order.price
+= link_to 'Edit', edit_order_path(@order)
+|
+= link_to 'Back', orders_path
+|
+= link_to 'New', new_order_path
